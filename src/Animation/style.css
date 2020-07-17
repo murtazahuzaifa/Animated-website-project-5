@@ -1,0 +1,26 @@
+.animation-container{
+    background: linear-gradient(0deg, violet 0%  , white 50%, violet 100%);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    transform: rotateX(70deg) rotateY(0deg) rotateZ(45deg) ;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px;
+}
+
+.right-wall{
+    background: linear-gradient(0deg, violet 0%  , white 50%, violet 100%);
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    width: 100px;
+    height: 100px;
+    transform: rotateX(0deg) rotateY(40deg) rotateZ(0deg) ;
+    /* border: 3px solid black; */
+    /* border-bottom: 2px solid black; */
+    /* border-right: 2px solid black; */
+    border-radius: 10px;
+}
