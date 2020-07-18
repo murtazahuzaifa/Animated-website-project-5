@@ -1,0 +1,32 @@
+.animation-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#header{
+    /* background-color: inherit; */
+    /* background-attachment: fixed; */
+}
+
+.portfolio{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    /* background-color: grey; */
+    padding: 30px;
+    text-align: center;
+    font-size: x-large;
+}
+.portfolio > div:nth-child(1) > h2{
+    margin-bottom: 10px;
+}

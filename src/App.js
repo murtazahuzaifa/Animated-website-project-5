@@ -1,5 +1,5 @@
 import React from 'react';
-import Animation from './Animation';
+// import {} from './Animations';
 import AnimatedPage from './AnimatedPage';
 import './style.css';
 

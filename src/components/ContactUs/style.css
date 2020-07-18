@@ -1,0 +1,40 @@
+.contact-us-container{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightseagreen; */
+}
+
+.charater{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.charater-head {
+    background: url('../../images/phone-operator/head.png');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    padding: 55px 4px;
+    transform: translate( -120px,105px) ;
+    /* transform: translate( -110px,105px) rotateZ(20deg); */
+}
+
+.charater-body {
+    background: url('../../images/phone-operator/body.png');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 190px 230px;
+    /* background-color: rgb(29, 160, 153); */
+}
+
+.contact-us-container > div:nth-child(2){
+    font-size: larger;
+    margin: 150px 50px 0 0 ;
+    width: 40%;
+    /* background-color: lightseagreen; */
+}

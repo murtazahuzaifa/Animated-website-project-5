@@ -1,0 +1,27 @@
+.card2-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(140, 146, 202); */
+    /* border-radius: 40px; */
+}
+
+.card2-container > div{
+    display: flex;
+    justify-content: center;
+    background: url('../../images/case-study.png');
+    background-size: cover;
+    background-position: center ;
+    border-radius: 50px;
+}
+
+.card2-container > div > div{
+    position: relative;
+    /* padding: 100px; */
+    border-radius: 50px;
+    padding: 270px 150px;
+    background-color: rgba(60, 189, 248,0);
+    opacity: 0;
+    width: 100%;
+}
