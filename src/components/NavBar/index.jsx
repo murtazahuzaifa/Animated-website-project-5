@@ -39,6 +39,7 @@ export default function () {
     return (
         <div className={`nav-bar ${navSrollDown? 'nav-bar-down':''}`}>
             <span><img src={require('../../images/logo.png')} style={{width:'70px'}} alt="logo"/></span>
+            <span><h1>LOGO</h1></span>
             <ul>
                 {Object.values(linkNames).map((link, id) => {
                     const navSelect = link.navSelect;
@@ -48,8 +49,8 @@ export default function () {
                             onMouseEnter={() => { navHover.getAnimation().updatePlaybackRate(1); navHover.getAnimation().play() }}
                             onMouseLeave={() => { navHover.getAnimation().updatePlaybackRate(-1); navHover.getAnimation().play() }}
                         >
-                            <label htmlFor={link.name.toLocaleLowerCase()} ref={navHover.ref} >
-                                <input id={link.name.toLocaleLowerCase()}
+                            <label htmlFor={`${link.name}-${id}`} ref={navHover.ref} >
+                                <input id={`${link.name}-${id}`}
                                     type="radio"
                                     value={link.name}
                                     name={'link'}
