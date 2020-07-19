@@ -10,10 +10,9 @@
 
 .card2-container > div{
     display: flex;
-    justify-content: center;
-    background: url('../../images/case-study.png');
-    background-size: cover;
-    background-position: center ;
+    /* justify-content: center; */
+    /* background-size: cover; */
+    /* background-position: center ; */
     border-radius: 50px;
 }
 

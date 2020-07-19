@@ -38,7 +38,7 @@ export default function () {
 
     return (
         <div className={`nav-bar ${navSrollDown? 'nav-bar-down':''}`}>
-            <span><h1>LOGO</h1></span>
+            <span><img src={require('../../images/logo.png')} style={{width:'70px'}} alt="logo"/></span>
             <ul>
                 {Object.values(linkNames).map((link, id) => {
                     const navSelect = link.navSelect;

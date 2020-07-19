@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import useAnimation from '@wellyshen/use-web-animations';
 import { arrowRight, textBold, cardAnimate, handleAnimate, handleReverseAnimate, handlePauseAnimate } from '../../Animations';
 import './style.css';
@@ -30,14 +30,17 @@ export default function ({ imgSrc, title, para }) {
     const arrowAnim = useAnimation(arrowRight);
     const readMoreBoldAnim = useAnimation(textBold);
     const cardMoveLeftAnim = useAnimation(moveCardLeft);
+    const [cardMoveLeftAnimRef,] = useState({ ref: cardMoveLeftAnim.ref, animate: cardMoveLeftAnim.getAnimation });
 
-    const handleScrollEvent = () => {
-        if (isElementInViewport(cardMoveLeftAnim.ref.current)) {
-            handleAnimate(cardMoveLeftAnim);
-            window.removeEventListener('scroll', handleScrollEvent);
+    useEffect(() => {
+        const handleScrollEvent = () => {
+            if (isElementInViewport(cardMoveLeftAnimRef.ref.current)) {
+                cardMoveLeftAnimRef.animate().play();
+                window.removeEventListener('scroll', handleScrollEvent);
+            }
         }
-    }
-    useEffect(()=>{window.addEventListener('scroll', handleScrollEvent)}, [])
+        window.addEventListener('scroll', handleScrollEvent);
+    }, [cardMoveLeftAnimRef])
 
     return (
         <div className='card-container' ref={cardMoveLeftAnim.ref}>

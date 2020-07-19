@@ -47,7 +47,7 @@ const armAnimation={
          {transform: 'translate(75px, -415px)',},
          {transform: 'translate(60px, -375px) rotateZ(30deg)'},
     ],
-    timing:{ duration:500, iterations:Infinity, direction:'alternate'}
+    timing:{ duration:1000, iterations:Infinity, direction:'alternate'}
 }
 
 export default function () {

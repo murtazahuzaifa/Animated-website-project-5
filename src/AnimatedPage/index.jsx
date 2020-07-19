@@ -7,7 +7,7 @@ export default function () {
 
     return (
         <>
-            <div className='animation-page-container' >
+            <div id='home' className='animation-page-container' >
                 <div id='header' ><NavBar /></div>
                 <div><br /><br /><br /><br /></div>
                 <div className='pg-cover'>
@@ -26,8 +26,8 @@ export default function () {
                         <p>User-friendly web pages are our thing. We’ve also helped some awesome businesses with branding and custom solutions.</p>
                     </div>
                     <div>
-                        <Card2 imgSrc={'../images/case-study.png'} />
-                        <Card2 imgSrc={'../images/case-study.png'} />
+                        <Card2 imgSrc={require('../images/case-study1.png')} />
+                        <Card2 imgSrc={require('../images/case-study2.png')} />
                     </div>
                 </div>
 
