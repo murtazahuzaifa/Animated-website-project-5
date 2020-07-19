@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 10px;
     /* background-color: rgb(140, 146, 202); */
     /* border-radius: 40px; */
 }

@@ -2,8 +2,8 @@ export const navLink_underline = {
     autoPlay: false,
     keyframes: [
         { opacity: 0 },
-        { background: 'rgb(6, 92, 92)', width: '0', height: '3px', },
-        { background: 'rgb(6, 92, 92)', width: '100%', height: '3px', },
+        { background: 'rgb(143, 223, 199)', width: '0', height: '3px', },
+        { background: 'rgb(143, 223, 199)', width: '100%', height: '3px', },
     ],
     timing: { duration: 250, easing: "ease-in-out", fill: "forwards" }
 };

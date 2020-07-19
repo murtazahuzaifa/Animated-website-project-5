@@ -5,10 +5,23 @@
     align-items: center;
 
 }
+.pg-cover{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* background-color: lawngreen; */
+    /* width: 100%; */
+}
+.pg-cover > div:nth-child(1){
+    /* position: absolute; */
+    width: 700px;
+    height: 100%;
+}
 
-#header{
-    /* background-color: inherit; */
-    /* background-attachment: fixed; */
+.bg-animation{
+    height: 100%;
 }
 
 .portfolio{
@@ -29,4 +42,16 @@
 }
 .portfolio > div:nth-child(1) > h2{
     margin-bottom: 10px;
+}
+
+.portfolio > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-bottom{
+    margin-top: 100px;
 }

@@ -20,7 +20,6 @@ export default function () {
                     at dignissimos.
                 </p>
             </div>
-            {/* <hr/> */}
             <div className='button-navigation'>
                 <button
                     onMouseEnter={() => { handleAnimate(buttonAnim1) }}

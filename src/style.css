@@ -7,8 +7,8 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: url('./images/top.svg') no-repeat;
     background-size: cover;
-    background-position: center ;
-    padding-bottom: 500px;
+    background-position: 50% -900px ;
+    /* padding-bottom: 500px; */
     overflow-x: hidden;
 }
 
@@ -22,14 +22,14 @@ body{
     color:  whitesmoke;
     border-radius: 20px;
     font-size: medium;
-    border: 3px solid rgb(6, 86, 133);
+    border: 3px solid rgb(15, 159, 243);
 }
 .btn2{
     color: black;
     font-size: larger;
     font-weight: bold;
     border-radius: 5px;
-    border: 3px solid rgb(6, 86, 133);
+    border: 3px solid rgb(15, 159, 243);
 }
 
 .btn3{

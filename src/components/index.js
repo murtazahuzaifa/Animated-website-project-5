@@ -3,6 +3,7 @@ import Cover from './Cover';
 import Card1 from './Card1';
 import Card2 from './Card2';
 import ContactUs from './ContactUs';
+import ArtistAnimation from './ArtistAnimation';
 
 export {
     NavBar,
@@ -10,5 +11,6 @@ export {
     Card1,
     Card2,
     ContactUs,
+    ArtistAnimation,
     
 }

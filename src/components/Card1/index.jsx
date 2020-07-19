@@ -1,4 +1,4 @@
-import React, { useEffect, useState, } from 'react';
+import React, { useEffect } from 'react';
 import useAnimation from '@wellyshen/use-web-animations';
 import { arrowRight, textBold, cardAnimate, handleAnimate, handleReverseAnimate, handlePauseAnimate } from '../../Animations';
 import './style.css';
@@ -25,9 +25,7 @@ const moveCardLeft = {
     timing: { duration: 500, easing: "ease-out", fill: "forwards" }
 };
 
-
 export default function ({ imgSrc, title, para }) {
-    const [cardView, ] = useState(false);
     const cardAnim = useAnimation(cardAnimate);
     const arrowAnim = useAnimation(arrowRight);
     const readMoreBoldAnim = useAnimation(textBold);
@@ -39,10 +37,7 @@ export default function ({ imgSrc, title, para }) {
             window.removeEventListener('scroll', handleScrollEvent);
         }
     }
-    const callBack = ()=>{window.addEventListener('scroll', handleScrollEvent)}
-    useEffect(() => {
-        callBack();
-    }, [cardView])
+    useEffect(()=>{window.addEventListener('scroll', handleScrollEvent)}, [])
 
     return (
         <div className='card-container' ref={cardMoveLeftAnim.ref}>

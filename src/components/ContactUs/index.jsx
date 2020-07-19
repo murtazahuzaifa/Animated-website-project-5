@@ -1,6 +1,6 @@
-import React, { useEffect, useState, } from 'react';
+import React from 'react';
 import useAnimation from '@wellyshen/use-web-animations';
-import { textBold ,handleAnimate, handleReverseAnimate, handlePauseAnimate } from '../../Animations';
+// import { textBold ,handleAnimate, handleReverseAnimate, handlePauseAnimate } from '../../Animations';
 import './style.css';
 
 const headTilting = {
